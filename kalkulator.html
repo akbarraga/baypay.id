@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAY ID</title>
+    <link rel="stylesheet" href="kalkulator.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="BAY.png" alt="">
+    
+            <div id="menu-icon" class="menu-icon">
+                <i class='bx bx-menu'></i>            
+            </div>
+        </div>
+    
+        <ul id="menu-list" class="hidden">
+            <li class="nav-link"><a href="index.html">BERANDA</a></li>
+            <li class="nav-link"><a href="">RIWAYAT</a></li>
+            <li class="nav-link has-dropdown">
+                <a id="game-link" href="#">TOPUP GAMES<i id="dropdown-icon" class='bx bx-chevron-down'></i></a>
+                <ul id="dropdownmenu" class="dropdown-menu hidden">
+                    <li><a href="index.html">MOBILE LEGENDS</a></li>
+                    <li><a href="index.html">FREEFIRE</a></li>
+                    <li><a href="index.html">PUBG</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-link has-dropdown">
+                <a class="selected" href="#">KALKULATOR <i class='bx bx-chevron-down'></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="kalkulator/index.html">WINRATE</a></li>
+                </ul>
+            </li>
+            <li class="nav-login log-in"><i class='bx bx-log-in-circle'></i><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>  
+    <main>
+        <h2>KALKULATOR WINRATE</h2>
+<form>
+    <label for="totalMatches">Total pertandingan yang akan dimainkan:</label>
+    <input type="number" id="totalMatches" name="totalMatches" value="0"><br><br>
+
+    <label for="currentWinRate">Win rate saat ini (%):</label>
+    <input type="number" id="currentWinRate" name="currentWinRate" value="0"><br><br>
+
+    <label for="targetWinRate">Win rate yang diinginkan (%):</label>
+    <input type="number" id="targetWinRate" name="targetWinRate" value="0"><br><br>
+
+    <button type="button" onclick="calculateMatchesNeeded()">Hitung</button>
+</form>
+
+<div id="result"></div>
+</main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan urna non velit bibendum, eu condimentum ligula sodales. Proin tempor lorem in dolor convallis, vel consectetur elit vestibulum.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BAY TOPUP. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="kalkulator.js"></script>
+</body>
+</html>
