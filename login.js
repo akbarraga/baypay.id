@@ -38,7 +38,7 @@ document.getElementById('signInForm').addEventListener('submit', function (event
 
     if (email === storedEmail && password === storedPassword) { // Authenticate user
         alert("Login berhasil"); // Show success notification
-        window.location.href = "/index.html"; // Redirect to main page
+        window.location.href = "index.html"; // Redirect to main page
     } else {
         alert("Invalid email or password");
     }
